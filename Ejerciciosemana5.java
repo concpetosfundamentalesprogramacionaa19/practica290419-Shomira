@@ -27,11 +27,11 @@ Nota: los porcentajes deben estar en una clase y paquete diferente; para su impo
      
      double  precioMatricula = 1330;
      double totalPrecio=1330;
-     double descuentoCiudad = 0;
-     double descuentoMatricula = 0;
-     double descuentoEdad = 0;
-     double descuentoEstadoCivil = 0;
-     double descuentoCargasFamiliares = 0;
+     double descuentoCiudad ;
+     double descuentoMatricula;
+     double descuentoEdad ;
+     double descuentoEstadoCivil ;
+     double descuentoCargasFamiliares ;
      Scanner entrada = new Scanner(System.in);
      
      System.out.println("INGRESO DE DATOS DEL ESTUDIANTE ");
@@ -44,10 +44,10 @@ Nota: los porcentajes deben estar en una clase y paquete diferente; para su impo
      System.out.println("Ingrese su edad");
      int edad = entrada.nextInt();
         //Si el estado civil del estudiante es casado se descontara el 5% del costo de matrícula inicial.
-     System.out.println("¿Usted es casado?.Conteste SI o NO: ");
+     System.out.println("�Usted es casado?.Conteste SI o NO: ");
      String estadoCivil = entrada.nextLine();
         //Si el estudiante tiene una o varias cargas familiares se le descontara el 3% del costo de matrícula inicial.
-     System.out.println("¿Usted tiene cargas familiares?.Conteste de igual forma SI O NO : ");
+     System.out.println("�Usted tiene cargas familiares?.Conteste de igual forma SI O NO : ");
      String cargasFam = entrada.nextLine();
         //Al costo final de matrícula se le debe agregar 2% por trámite administrativos.
      
@@ -68,7 +68,7 @@ Nota: los porcentajes deben estar en una clase y paquete diferente; para su impo
         totalPrecio = (totalPrecio-descuentoCargasFamiliares);
     }      
          
-         System.out.println("El costo de su matricula es "+ totalPrecio);
+        System.out.println("El costo de su matricula es "+ totalPrecio);
     
         
     
